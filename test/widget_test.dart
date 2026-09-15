@@ -4,6 +4,6 @@ import 'package:solaryx/solaryx_app.dart';
 void main() {
   testWidgets('SolaryxApp smoke test', (WidgetTester tester) async {
     await tester.pumpWidget(const SolaryxApp());
-    expect(find.byType(SolaryxApp), findsOneWidget);
+    expect(find.text('Solaryx Daylight Lab'), findsOneWidget);
   });
 }
